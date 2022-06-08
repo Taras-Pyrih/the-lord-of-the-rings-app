@@ -1,0 +1,18 @@
+.BookItem {
+  width: 26.5%;
+
+  img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: block;
+  }
+  
+  p {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    background: gainsboro;
+  }
+}

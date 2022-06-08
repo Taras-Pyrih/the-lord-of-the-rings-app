@@ -1,0 +1,17 @@
+.PageSelection {
+  font-size: 1.25em;
+  text-align: center;
+  padding: 10px 0;
+
+  .page, .current-page {
+    font-size: 1.25em;
+    text-decoration: none;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .current-page {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}

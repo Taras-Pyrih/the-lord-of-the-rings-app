@@ -1,0 +1,59 @@
+.QuoteItem {
+  width: 75%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  background: gainsboro;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    border-radius: 10px;
+
+    &:first-of-type {
+      width: 14.5%;
+    }
+
+    &:last-of-type {
+      width: 21.5%;
+    }
+  }
+
+  .description {
+    width: 60%;
+
+    p {
+      font-size: 1.15em;
+      font-style: italic;
+      padding: 10px 0;
+      border-bottom: 2px solid black;
+      
+      &:first-child {
+        span {
+          color: black;
+        }
+      }
+
+      &:nth-child(2) {
+        span {
+          color:indianred;
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+
+        span {
+          color:chocolate;
+        }
+      }
+      
+      span {
+        font-size: 1.3em;
+        font-weight: bold;
+        font-style: normal;
+      }
+    }
+  }
+}

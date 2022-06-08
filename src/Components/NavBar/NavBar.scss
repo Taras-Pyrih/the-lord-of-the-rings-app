@@ -1,0 +1,34 @@
+.NavBar {
+  background: darksalmon;
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      width: 20%;
+      padding: 10px 0;
+      border-right: 2px solid #000000;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      .link {
+        color: darkslategrey;
+        
+        &:hover {
+          color: slategrey;
+        }
+      }
+      
+      .active-link {
+        color: aliceblue;
+        text-decoration: none;
+      }
+    }
+  }  
+}

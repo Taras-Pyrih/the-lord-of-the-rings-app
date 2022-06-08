@@ -1,0 +1,35 @@
+.ChapterItem {
+  width: 26%;
+  padding-bottom: 20px;
+
+  img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: block;
+  }
+  
+  p {
+    font-size: 1.15em;
+    font-style: italic;
+    padding: 5px 10px;
+    background: gainsboro;
+  
+    &:first-of-type {
+      span {
+        font-size: 1.45em;
+        color: black;
+      }
+    }
+    
+    &:last-of-type {
+      border-radius: 0 0 10px 10px;
+    }
+  
+    span {
+      font-size: 1.3em;
+      font-weight: bold;
+      font-style: normal;
+      color:indianred;
+    }
+  }
+}

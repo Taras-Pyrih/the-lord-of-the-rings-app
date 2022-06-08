@@ -1,0 +1,30 @@
+.MovieItem {
+  width: 24.5%;
+
+  img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: block;
+  }
+
+  div {
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    background: gainsboro;
+    display: flex;
+    justify-content: center;
+
+    .link {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: darkslategray;
+      text-decoration: none;
+      text-align: center;
+  
+      &:hover {
+        color: black;
+        text-decoration: underline;
+      }
+    }
+  }
+}

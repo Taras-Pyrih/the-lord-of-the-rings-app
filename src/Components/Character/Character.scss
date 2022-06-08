@@ -1,0 +1,61 @@
+.Character {
+  .container {
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: gainsboro;
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      img {
+        width: 45%;
+        border-radius: 10px;
+      }
+  
+      .top-row__right-side {
+        width: 50%;
+  
+        p {
+          font-size: 1.15em;
+          font-style: italic;
+          padding: 10px 0;
+          border-bottom: 2px dashed black;
+  
+          &:first-child {
+            span {
+              font-size: 1.45em;
+              color: black;
+            }
+          }
+  
+          span {
+            font-size: 1.3em;
+            font-weight: bold;
+            font-style: normal;
+            color:indianred;
+          }
+        }
+      }
+    }
+  
+    .bottom-row {
+      p {
+        font-size: 1.15em;
+        font-style: italic;
+        padding: 10px 0;
+        border-bottom: 2px dashed black;
+        
+        span {
+          font-size: 1.3em;
+          font-weight: bold;
+          font-style: normal;
+          color:chocolate;
+        }
+      }
+    }
+  }
+}

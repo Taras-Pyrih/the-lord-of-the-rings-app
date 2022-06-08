@@ -1,0 +1,44 @@
+.Movie {
+  .container {
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    img {
+      width: 45%;
+      border-radius: 10px;
+    }
+    
+    .right-side {
+      width: 50%;
+      
+      p {
+        font-size: 1.15em;
+        font-style: italic;
+        padding: 10px 0;
+        border-bottom: 2px dotted black;
+        
+        &:first-child {
+          border-top: 2px dotted black;
+
+          span {
+            font-size: 1.45em;
+            color: black;
+          }
+        }
+        
+        span {
+          font-size: 1.3em;
+          font-weight: bold;
+          font-style: normal;
+          color:indianred;
+        }
+      }
+    }
+  }
+}
