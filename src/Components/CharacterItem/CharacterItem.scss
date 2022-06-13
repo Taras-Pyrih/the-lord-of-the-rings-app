@@ -1,6 +1,15 @@
 .CharacterItem {
+  color: darkslategray;
   width: 18%;
   padding-bottom: 20px;
+  transition-duration: 0.5s;
+
+  &:hover {
+    color: black;
+    text-decoration: underline;
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
 
   img {
     width: 100%;
@@ -12,20 +21,11 @@
     padding: 10px;
     border-radius: 0 0 10px 10px;
     background: gainsboro;
-    display: flex;
-    justify-content: center;
 
-    .link {  
+    p {  
       font-size: 1.25em;
       font-weight: bold;
-      color: darkslategray;
-      text-decoration: none;
       text-align: center;
-  
-      &:hover {
-        color: black;
-        text-decoration: underline;
-      }
     }
   }
 }

@@ -1,4 +1,9 @@
 .Character {
+  h1 {
+    text-align: center;
+    padding: 15px 0;
+  }
+
   .container {
     width: 60%;
     padding: 10px;
@@ -57,5 +62,13 @@
         }
       }
     }
+  }
+
+  .notification {
+    font-size: 2em;
+    font-weight: bold;
+    color:firebrick;
+    text-align: center;
+    padding: 15px 0;
   }
 }

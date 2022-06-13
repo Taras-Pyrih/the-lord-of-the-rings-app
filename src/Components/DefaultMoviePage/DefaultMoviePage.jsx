@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { moviesAPI } from "../../thunkActionCreators/moviesAPI.jsx";
 import { MovieList } from "../MovieList/MovieList.jsx";
+import './DefaultMoviePage.scss';
 
 export const DefaultMoviePage = () => {
   const dispatch = useDispatch();

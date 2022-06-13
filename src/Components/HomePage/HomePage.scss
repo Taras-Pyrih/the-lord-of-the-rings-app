@@ -20,15 +20,21 @@
       font-weight: bold;
       color: darkslategray;
       text-decoration: none;
-      text-align: center;
       width: 18%;
       padding: 100px 0;
       border-radius: 10px;
       background: gainsboro;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-duration: 0.5s;
       
       &:hover {
+        font-size: 3em;
         color: black;
         text-decoration: underline;
+        padding: 70px 0;
+        background:darkgray;
       }
     }
   }

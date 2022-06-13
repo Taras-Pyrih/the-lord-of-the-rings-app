@@ -1,7 +1,89 @@
 .DefaultCharacterPage {
-  h1 {
-    text-align: center;
-    padding: 15px 0;
+  .top-row {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: 2em;
+      cursor: pointer;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 15px 0;
+    }
+  }
+
+  .bottom-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    .filter {
+      display: none;
+
+      img {
+        height: 1.5em;
+        cursor: pointer;
+      }
+
+      .slider {
+        width: 50px;
+        height: 20px;
+        border-radius: 10px;
+        margin: 0px 25px;
+        background:bisque;
+        position: relative;
+
+        .roller {
+          width: 16px;
+          height: 16px;
+          border-radius: 8px;
+          background:darksalmon;
+          position: absolute;
+          left: 2px;
+          top: 2px;
+          transition-duration: 300ms;
+        }
+
+        .rollerIsOnRightSide {
+          left: calc(100% - 18px);
+        }
+      }
+    }
+
+    .filterIsVisible {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search {
+      display: none;
+
+      input {
+        padding: 5px;
+        border: 2px solid darkblue;
+        border-radius: 5px;
+      }
+
+      button {
+        color: #FFFFFF;
+        padding: 0 5px;
+        border-radius: 5px;
+        background: darkblue;
+        cursor: pointer;
+      }
+    }
+    
+    .searchIsVisible {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
   }
 
   .notification {

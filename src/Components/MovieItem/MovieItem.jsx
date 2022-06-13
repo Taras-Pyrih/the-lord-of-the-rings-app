@@ -1,9 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { moviePosters } from "../../images/moviePosters.jsx";
-import { Link } from "react-router-dom";
 import './MovieItem.scss';
 
 export const MovieItem = props => {
+  const navigate = useNavigate();
   const profile = props.profile;
+
+  const handleClick = () => {
+    navigate(`/movies/${profile._id}`);
+  };
+
   let imageLink;
 
   for (let poster of moviePosters) {
@@ -14,9 +20,9 @@ export const MovieItem = props => {
   }
 
   return (
-    <li className="MovieItem">
+    <li className="MovieItem" onClick={handleClick}>
       <img src={imageLink} alt={`${profile.name}_poster`}/>
-      <div><Link className="link" to={`/movies/${profile._id}`}>{profile.name}</Link></div>
+      <div><p>{profile.name}</p></div>
     </li>
   );
 };

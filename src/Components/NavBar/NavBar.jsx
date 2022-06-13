@@ -1,8 +1,23 @@
+import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import './NavBar.scss';
 
 export const NavBar = () => {
-  const setLinkStyle = ({ isActive }) => isActive ? 'active-link' : 'link';
+  const location = useLocation();
+  const pathname = location.pathname;
+  const setLinkStyle = ({ isActive }) => (
+    isActive
+    ? (
+      pathname != '/books' &&
+      pathname != '/movies' &&
+      pathname != '/characters' &&
+      pathname != '/quotes' &&
+      pathname != '/chapters'
+      ? 'active-child-link'
+      : 'active-parent-link'
+    )
+    : 'link'
+  );
 
   return (
     <nav className="NavBar">
